@@ -485,16 +485,6 @@ parameters:
     desc: "Use pre-built GPU drivers"
     "no":
       default: true
-    # Preferred providers
-
-    - [PREFERRED_PROVIDER_virtual/libgles1, ""]
-    - [PREFERRED_PROVIDER_virtual/libgles2, "gles-user-module"]
-    - [PREFERRED_PROVIDER_virtual/libgles3, "gles-user-module"]
-    - [PREFERRED_PROVIDER_virtual/egl, "libegl"]
-    - [PREFERRED_PROVIDER_virtual/libgl, ""]
-    - [PREFERRED_PROVIDER_virtual/mesa, ""]
-    - [PREFERRED_PROVIDER_virtual/libgbm, "libgbm"]
-    - [PREFERRED_PROVIDER_libgbm-dev, "libgbm"]
       overrides:
         components:
           domd: *DDK_SOURCE_OVERRIDES
